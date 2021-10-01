@@ -2,10 +2,10 @@ version: 0.2
 
 env:
   secrets-manager:
-    LOGIN: SonarCredentials:sonartoken
-    HOST: SonarCredentials:host
-    Organization: SonarCredentials:organization
-    Project: SonarCredentials:projectKey
+    LOGIN: SonarCredentials:sonartoken12
+    HOST: SonarCredentials:theVHost
+    Organization: SonarCredentials:org
+    Project: SonarCredentials:project5
 
 phases:
   install:
@@ -44,4 +44,5 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"userms","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
+      ifttt(c : k) will work.
     files: imagedefinitions.json
